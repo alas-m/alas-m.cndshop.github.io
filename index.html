@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CND Shop — hand-built digital products</title>
+<meta name="description" content="Hand-built digital products by CND: OSINT engines, AI tooling, trading systems, web games. Buy direct — Telegram @cnddev.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0d13'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%238b7bff' text-anchor='middle'%3ECND%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ambient background -->
+<div class="bg-orb bg-orb--a" aria-hidden="true"></div>
+<div class="bg-orb bg-orb--b" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top">
+      <span class="brand-glyph">▚</span>
+      <span class="brand-name">CND_SHOP</span><span class="cursor-block" aria-hidden="true">▊</span>
+    </a>
+    <nav class="header-nav" aria-label="Main">
+      <a href="#catalog" class="nav-link">CATALOG</a>
+      <a href="#services" class="nav-link">SERVICES</a>
+      <a href="#how" class="nav-link">HOW IT WORKS</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a class="btn btn--accent btn--small" data-tg href="https://t.me/cnddev" target="_blank" rel="noopener">
+        <span class="btn-label">@cnddev</span>
+        <span class="btn-label btn-label--clone" aria-hidden="true">@cnddev →</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="eyebrow mono">// CND SHOP <span class="dim">v1.0</span> — hand-built, no middlemen</p>
+      <h1 class="hero-title">Products built<br><span class="accent-text">by hand</span>, shipped direct.</h1>
+      <p class="hero-sub">
+        Search engines for the blind spots. AI tooling that runs on <em>your</em> machine.
+        Trading signal stacks. One web game with a saloon soul.
+        Everything here is real source code — pick it up, own it, run it yourself.
+      </p>
+      <div class="hero-cta-row">
+        <a class="btn btn--accent btn--large" href="#catalog">
+          <span class="btn-label">Browse the catalog</span>
+          <span class="btn-label btn-label--clone" aria-hidden="true">Browse the catalog ↓</span>
+        </a>
+        <a class="btn btn--ghost btn--large" href="#services">
+          <span class="btn-label">Browse services</span>
+          <span class="btn-label btn-label--clone" aria-hidden="true">Browse services ↓</span>
+        </a>
+      </div>
+      <div class="hero-stats mono" id="hero-stats">
+        <span class="stat"><b class="stat-num">09</b> PRODUCTS</span>
+        <span class="stat"><b class="stat-num">SRC</b> DELIVERY</span>
+        <span class="stat"><b class="stat-num">1:1</b> SUPPORT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATALOG ============ -->
+  <section id="catalog" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Catalog<span class="mono dim">/</span></h2>
+        <p class="mono dim section-note">// click a category to filter</p>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter products by category"></div>
+
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Services<span class="mono dim">/</span></h2>
+        <p class="mono dim section-note">// custom work, quoted upfront</p>
+      </div>
+      <div class="svc-grid" id="services-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section id="how" class="section section--alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">How it works<span class="mono dim">/</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step" data-reveal>
+          <div class="step-num mono">01</div>
+          <h3 class="step-title">Pick a product</h3>
+          <p class="step-text">Open the card, check the stack and the price. Everything ships as full source with docs.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-num mono">02</div>
+          <h3 class="step-title">Write to @cnddev</h3>
+          <p class="step-text">One click opens Telegram with the product prefilled — no forms, no emails, no checkout theater.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-num mono">03</div>
+          <h3 class="step-title">Get the goods</h3>
+          <p class="step-text">Payment method agreed in chat. Then source, setup walkthrough and 1:1 answers while you deploy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <h2 class="section-title">FAQ<span class="mono dim">/</span></h2>
+      </div>
+      <div class="faq" data-reveal>
+        <details class="faq-item">
+          <summary>What exactly do I receive?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <p>The full source code of the product, its README and setup notes. You own it — run it on your own hardware, extend it, resell your builds.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do I pay?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <p>Agreed directly in Telegram. Crypto is preferred, other options are discussed case by case. No payment gateways, no fees, no middlemen.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you provide support?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <p>Yes — 1:1 with me after purchase while you get it running. Custom modifications are quoted in chat.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Something not on the shelf?<span class="faq-plus" aria-hidden="true"></span></summary>
+          <p>I take custom builds across OSINT, trading tooling, AI pipelines and web games. Describe the idea in Telegram and we shape it.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="mono">CND_SHOP<span class="accent-text">.</span></span>
+      <p class="footer-note">Hand-built digital products.<br>No middlemen. No shelfware.</p>
+    </div>
+    <div class="footer-links mono">
+      <a data-tg href="https://t.me/cnddev" target="_blank" rel="noopener">@cnddev</a>
+      <a href="https://github.com/alas-m" target="_blank" rel="noopener">github</a>
+      <a href="https://alas-m.github.io/" target="_blank" rel="noopener">portfolio</a>
+    </div>
+    <p class="footer-copy mono dim">© <span data-year>2026</span> CND. built in Budapest ▮</p>
+  </div>
+  <div class="container">
+    <nav class="footer-legal mono" aria-label="Legal">
+      <a href="terms.html">Terms</a>
+      <span aria-hidden="true">·</span>
+      <a href="privacy.html">Privacy</a>
+      <span aria-hidden="true">·</span>
+      <a href="refunds.html">Refund policy</a>
+      <span class="footer-legal-note">EU / Czech consumer rights apply — see each page.</span>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/legal.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
